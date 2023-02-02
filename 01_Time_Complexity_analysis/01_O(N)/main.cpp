@@ -12,3 +12,5 @@ int main(){
   }
   cout<<sum<<'\n';
 }
+//time complexity=O(n+n)=O(2n)=O(n);
+//space complexity=O(n);

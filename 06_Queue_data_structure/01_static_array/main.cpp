@@ -16,6 +16,13 @@ public:
     r++;
     q[r]=value;
   }
+  int front(){
+    if(l>r){
+      cout<<"Your queue is empty"<<'\n';
+    }
+    return q[l];
+
+  }
   void dequeue(){
     if(l>r){
       cout<<"Your queue is empty"<<'\n';
@@ -37,6 +44,7 @@ int main(){
   cout<<"Size of queue: "<<q.size()<<'\n';
   q.enqueue(7);
   cout<<"Size of queue: "<<q.size()<<'\n';
+  cout<<"font element of queue: "<<q.front()<<'\n';
   q.dequeue();
   cout<<"Size of queue: "<<q.size()<<'\n';
 

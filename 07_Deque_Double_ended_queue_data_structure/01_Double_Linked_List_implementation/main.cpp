@@ -95,7 +95,7 @@ public:
   }
 };
 int main(){
-  DEQUE<int> d;
+  DEQUE d;
   d.push_back(5);
   d.push_back(10);
   d.push_back(15);

@@ -16,6 +16,16 @@ The following graph shows a linear search algorithm in action. The red line is t
 
 ![Linear Search Example]([https://upload.wikimedia.org/wikipedia/commons/5/5a/Linear_search.png](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Linear-Search.png))
 
+##  Linear Search algorithm
+Linear Search ( Array A, Value x)
+Step 1: Set i to 1
+Step 2: if i > n then go to step 7
+Step 3: if A[i] = x then go to step 6
+Step 4: Set i to i + 1
+Step 5: Go to Step 2
+Step 6: Print Element x Found at index i and go to step 8
+Step 7: Print element not found
+Step 8: Exit
 
 ## Conclusion
 
@@ -40,6 +50,14 @@ The following graph shows a binary search algorithm in action. The red line is t
 
 ![Binary Search Example](https://upload.wikimedia.org/wikipedia/commons/8/83/Binary_Search_Depiction.svg)
 
+## Binary search algorithm
+Step 1 − Start searching data from middle of the list.
+Step 2 − If it is a match, return the index of the item, and exit.
+Step 3 − If it is not a match, probe position.
+Step 4 − Divide the list using probing formula and find the new midle.
+Step 5 − If data is greater than middle, search in higher sub-list.
+Step 6 − If data is smaller than middle, search in lower sub-list.
+Step 7 − Repeat until match.
 
 ## Conclusion
 

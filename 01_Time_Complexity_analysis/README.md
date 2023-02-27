@@ -1,5 +1,3 @@
-write all for readme.md file format data?
-
 # Algorithm
 
 An algorithm is a set of instructions used to solve a problem. Algorithms are used in a wide variety of applications, from programming languages to search engines, and they can range from simple to complex.

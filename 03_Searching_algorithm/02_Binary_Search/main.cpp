@@ -12,7 +12,7 @@ int main(){
   int counter=0;
   for(int i=0;i<n;i++){
     int mid=(low+high)/2;
-    cout<<"Low "<<low<<" Hight "<<high<<" Mid "<<mid<<'\n';
+    cout<<"Low "<<low<<" Hight "<<high<<" Mid "<<mid<<'\n';go
     if(a[mid]==k){
       cout<<"Index is :"<<mid<<" value is: "<<a[mid]<<'\n';
       counter=1;
@@ -29,6 +29,22 @@ int main(){
   if (counter==0){
     cout << "You value isn't exixst here" << '\n';
   }
-
-
 }
+/*
+Binary Search Complexity Analysis:
+	Operation               Array Length
+	0			n =n/2^0
+	1			n/2=n/2^1
+	2			n/4=n/2^2
+	3			n/8=n/2^3
+	…
+	K			n/2^k
+Break,
+n/2^k=1
+n=2^k
+k=log2^n
+
+Note:
+log a base b =c
+log a base c = b
+*/

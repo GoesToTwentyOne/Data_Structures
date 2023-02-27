@@ -14,7 +14,7 @@ The biggest advantage of linear search is its simplicity. It is also relatively 
 
 The following graph shows a linear search algorithm in action. The red line is the element being searched for and the blue lines indicate the elements in the list.
 
-![Linear Search Example](https://upload.wikimedia.org/wikipedia/commons/5/5a/Linear_search.png)
+![Linear Search Example]([https://upload.wikimedia.org/wikipedia/commons/5/5a/Linear_search.png](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Linear-Search.png))
 
 
 ## Conclusion

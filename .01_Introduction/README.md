@@ -11,13 +11,6 @@
 
 **Entity/Record:** Entity/Record is something that has certain attributes or properties which may be assigned values. The values themselves may be either numeric or nonnumeric. For example, the following are possible attributes and their corresponding values for an entity, an employee of a given organization.
 
-|**File/Table**|
-| :-: |
-|***Attributes/Fields:***|*Name*|*Age*|*Gender*|*Phone Number*||
-|**Values:**|Noman, Sarkar|24|Male|01818….|**Entity/Record**|
-||Sakil, Ahmed|23|Male|01723…..||
-||Mithila, Hossain|22|Female|01615…..||
-
 **Data Structures:**
 
 **Data Structure** is the mathematical or logical model of a particular organization of data is called a data structure. **Data Structure** is a way of collecting and organizing data in such a way that we can perform operations on these data in an effective way. Data Structures is about rendering data elements in terms of some relationship, for better organization and storage. For example, we have some data which has, player's **name** "Abed" and **age** 26. Here "Abed" is of **String** data type and 26 is of **integer** data type.
@@ -37,6 +30,7 @@ Mainly Data Structures are two types:
 
 1) Primitive Data Structures
 1) Non- Primitive Data Structures
+![](23_Media/data_types.png)
 
 
 **i) Primitive Data Structures:** The term "data type" and "primitive data type" are often used interchangeably. Primitive data types are predefined types of data, which are supported by the programming language. For example, integer, character, and string are all primitive data types. Programmers can use these data types when creating variables in their programs. For example, a programmer may create a variable called "last name" and define it as a string data type. The variable will then store data as a string of characters.

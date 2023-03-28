@@ -31,7 +31,7 @@ Mainly Data Structures are two types:
 1) Primitive Data Structures
 1) Non- Primitive Data Structures
 ***
-![](23_Media/data_types.jpg)
+![](./23_Media/data_types.jpg)
 ***
 
 

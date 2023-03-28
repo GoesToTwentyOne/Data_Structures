@@ -30,7 +30,9 @@ Mainly Data Structures are two types:
 
 1) Primitive Data Structures
 1) Non- Primitive Data Structures
+***
 ![](23_Media/data_types.jpg)
+***
 
 
 **i) Primitive Data Structures:** The term "data type" and "primitive data type" are often used interchangeably. Primitive data types are predefined types of data, which are supported by the programming language. For example, integer, character, and string are all primitive data types. Programmers can use these data types when creating variables in their programs. For example, a programmer may create a variable called "last name" and define it as a string data type. The variable will then store data as a string of characters.

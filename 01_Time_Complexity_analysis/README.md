@@ -187,8 +187,6 @@ It’s a function describing the amount of memory an algorithm takes in terms of
 
 Space complexity is sometimes ignored because the space used is minimal and/or obvious, however sometimes it becomes as important an issue as time.
 
-**Lecture 3**
-
 **Asymptotic Notations**
 
 Execution time of an algorithm depends on the instruction set, processor speed, disk I/O speed, etc. Hence, we estimate the efficiency of an algorithm asymptotically.

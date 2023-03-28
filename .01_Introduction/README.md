@@ -1,4 +1,4 @@
-
+***
 **Basic terminologies:**
 
 **Data** are simply values or sets of values. A data item refers to a single unit of values. **Data**, in the context of computing, refers to distinct pieces of digital information. Data is usually formatted in a specific way and can exist in a variety of forms, such as numbers, text, etc. When used in the context of transmission media, data refers to information in binary digital format.
@@ -10,6 +10,7 @@
 **Attribute/ Field:** Attribute/ Filed is a single elementary unit of information representing an attribute of an entity. Example: Name, Age, Gender e.t.c.
 
 **Entity/Record:** Entity/Record is something that has certain attributes or properties which may be assigned values. The values themselves may be either numeric or nonnumeric. For example, the following are possible attributes and their corresponding values for an entity, an employee of a given organization.
+***
 
 **Data Structures:**
 

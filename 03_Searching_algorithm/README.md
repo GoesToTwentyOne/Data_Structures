@@ -267,3 +267,19 @@ End Procedure
 
 ***
 ***
+**Limitation of Binary Search Algorithm:**
+- While binary search is an efficient algorithm for searching in sorted arrays or lists, it does have a few limitations:
+
+- Sorted Data Requirement: Binary search requires the input data to be sorted in ascending or descending order. If the data is not sorted, binary search cannot be directly applied. Sorting the data can be an additional overhead.
+
+- Array/List Requirement: Binary search is primarily designed for sorted arrays or lists. It may not be directly applicable to other data structures like linked lists or trees. Converting the data to an array or list format may require extra time and memory.
+
+- Insertion/Deletion Overhead: Binary search performs well for static data sets, where the data doesn't change frequently. However, if the data is frequently updated, such as frequent insertions or deletions, maintaining the sorted order can become costly. Each insertion or deletion operation may require shifting elements, impacting the efficiency of the algorithm.
+
+- Random Access Requirement: Binary search assumes random access to elements, meaning it requires the ability to access any element in constant time. In certain data structures, like linked lists, random access may not be efficient, and therefore binary search may not be the best choice.
+
+- Lack of Flexibility: Binary search is designed to find a specific value or determine its absence. It may not be well-suited for more complex search tasks, such as finding the closest value or all occurrences of a value. Additional modifications or adaptations to the algorithm may be required to address such requirements.
+
+- Recursive Overhead: Binary search can be implemented using recursion, which may lead to stack overflow errors if the input size is too large. In some programming languages, recursion has a limited depth, and extremely large arrays may exceed this limit.
+
+- Despite these limitations, binary search remains a powerful and widely used algorithm for efficient searching in sorted arrays, providing a time complexity of O(log n) compared to linear search with a time complexity of O(n).

@@ -57,7 +57,7 @@ The algorithm for the Sieve of Eratosthenes can be described as follows:
 
     - Print or store the prime numbers from 2 to limit using the isPrime array
 - end function
-**Limitations of Sieve of Eratosthenes**
+- **Limitations of Sieve of Eratosthenes**
 - Memory Usage: The algorithm requires memory proportional to the given limit, which can be a limitation for large limits.
 - Not Suitable for Large Primes: The Sieve of Eratosthenes is more suitable for finding small to moderate-sized prime numbers rather than very large prime numbers.
 - Limited by the limit: The algorithm can only find prime numbers up to a predetermined value and cannot be used to generate an infinite list of primes.

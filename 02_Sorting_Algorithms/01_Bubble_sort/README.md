@@ -54,16 +54,16 @@ Performance: Compared to more advanced sorting algorithms, Bubble Sort is relati
 - Continue iterating through the list until no more swaps are needed.
 
 **Pseudocode**
-``go
-function bubbleSort(list):
-    n = length(list)
-    for i from 0 to n-1:
-        for j from 0 to n-i-1:
-            if list[j] > list[j+1]:
-                swap(list[j], list[j+1])
-``
-''''
-**Limitations of Bubble Sort**
+
+- function bubbleSort(list):
+    - n = length(list)
+    - for i from 0 to n-1:
+        - for j from 0 to n-i-1:
+            - if list[j] > list[j+1]:
+                - swap(list[j], list[j+1])
+
+
+- **Limitations of Bubble Sort**
 Bubble Sort has some limitations that make it less suitable for certain scenarios:
 - Inefficiency: Bubble Sort's time complexity of O(n^2) makes it inefficient for large datasets. It is not recommended for sorting large lists or in performance-critical applications.
 
@@ -71,4 +71,3 @@ Bubble Sort has some limitations that make it less suitable for certain scenario
 
 - Slow convergence: Bubble Sort may require multiple passes through the list, even if the list is already sorted or nearly sorted. This can waste unnecessary computations.
 It is important to consider these limitations and explore alternative sorting algorithms depending on the requirements of your specific use case.
-''''

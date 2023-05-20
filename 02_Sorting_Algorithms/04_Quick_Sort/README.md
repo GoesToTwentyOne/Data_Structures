@@ -22,15 +22,18 @@
 - In-place sorting: It doesn't require additional memory space beyond the input array.
 - Quicker in practice compared to other sorting algorithms due to low overhead.
 - Suitable for large datasets.
+
 **Disadvantages**
 - Worst-case time complexity is O(n^2) in the unbalanced partition scenario.
 - Not a stable sorting algorithm, meaning the relative order of equal elements may change.
 - Requires a good choice of the pivot element to achieve optimal performance.
+
 **Algorithm**
 - Choose a pivot element from the array (typically the first or last element).
 - Partition the array by rearranging elements such that all elements less than the pivot come before it, and all elements greater than the pivot come after it.
 - Recursively apply Quick Sort to the subarrays on the left and right of the pivot until the entire array is sorted.
 - Combine the sorted subarrays to obtain the final sorted array.
+
 **Pseudocode**
 - function quickSort(arr, low, high):
     - if low < high:

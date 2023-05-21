@@ -13,6 +13,7 @@ public:
     head=NULL;
     size=0;
   }
+  //create a new node : data= value, next_pointer=NULL
   Node* createNode(int value){
     Node *newnode=new Node;
     newnode->data=value;
@@ -22,7 +23,7 @@ public:
   //Time complexity=O(1)
   void insert_At_Head(int value){
     size++;
-    Node* a= createNode(value);
+    Node *a= createNode(value);
     if(head==NULL){
       head=a;
       return;
@@ -63,6 +64,7 @@ public:
   }
   void delete_At_Head(){
     if(head==NULL){
+      cout<<"underflow"<<'\n';
       return;
     }
     size--;
@@ -84,9 +86,20 @@ public:
     a->next_pointer=b->next_pointer;
     delete b;
   }
+  void delete_At_Last(){
+
+    Node* a=head;
+    while(a->next_pointer->next_pointer!=NULL){
+      a=a->next_pointer;
+    }
+    Node *b = a->next_pointer;
+    a->next_pointer=NULL;
+    delete b;
+  }
   //Time complexity= O(n)
   void traverse(){
     Node* a=head;
+    //while(a->next_pointer!=NULL){
     while(a!=NULL){
       cout<<a->data<<" ";
       a=a->next_pointer;
@@ -96,6 +109,7 @@ public:
   int distinctSearch(int value){
     Node* a=head;
     int index=0;
+    //while(a->next_pointer!=NULL){
     while(a!=NULL){
       if(a->data==value){
         return index;
@@ -111,12 +125,34 @@ public:
     int index=0;
     while(a!=NULL){
       if(a->data==value){
-        cout<<index<<" ";
+        cout<<value<<" is found at :"<<index<<"\t";
       }
       a=a->next_pointer;
       index++;
     }
     cout<<'\n';
+  }
+
+
+
+
+  //insert after a value
+  void after_A_value(int value,int data){
+    Node *a=head;
+    int current_index=0;
+    while (a!=NULL) {
+      if(a->data==value){
+          break;
+      }
+      a=a->next_pointer;
+    }
+    if (a==NULL){
+      cout<<"value doesn't exist"<<'\n';
+      return;
+    }
+    Node *newnode= createNode(data);
+    newnode->next_pointer=a->next_pointer;
+    a->next_pointer=newnode;
   }
 };
 int main(){
@@ -126,7 +162,7 @@ int main(){
   li.insert_At_Head(30);
   li.insert_At_Head(20);
   li.traverse();
-  cout<<li.distinctSearch(20)<<'\n';
+  cout<<"20 is found at : "<<li.distinctSearch(20)<<'\n';
   li.allPossibleSearch(20);
   li.insert_At_Last(4848);
   li.traverse();
@@ -135,6 +171,10 @@ int main(){
   li.delete_At_Head();
   li.traverse();
   li.delete_At_Any_Pos(2);
+  li.traverse();
+  li.delete_At_Last();
+  li.traverse();
+  li.after_A_value(30,100);
   li.traverse();
 
 }

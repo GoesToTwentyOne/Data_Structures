@@ -176,5 +176,4 @@ int main(){
   li.traverse();
   li.after_A_value(30,100);
   li.traverse();
-
 }

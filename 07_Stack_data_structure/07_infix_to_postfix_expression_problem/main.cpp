@@ -4,9 +4,6 @@ int prec(char ch){
   if(ch=='+' || ch=='-'){
     return 0;
   }
-  if(ch=='(' || ch==')'){
-    return;
-  }
   return 1;
 }
 int main(){

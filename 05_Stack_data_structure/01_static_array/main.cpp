@@ -3,7 +3,6 @@ using namespace std;
 const int max_size=500;
 class STACK{
 public:
-
   int a[max_size];
   int stack_size;
   STACK(){
@@ -11,7 +10,7 @@ public:
   }
   void push(int value){
     if(stack_size+1>max_size){
-      cout<<"Stack is ful.\n";
+      cout<<"Stack is full.<overflow>\n";
       return;
     }
     stack_size+=1;
@@ -19,9 +18,10 @@ public:
   }
   void pop(){
     if(stack_size<=0){
-      cout<<"Stack is empty!\n";
+      cout<<"Stack is empty!<underflow>\n";
       return;
     }
+    //replace the value
     a[stack_size-1]=0;
     stack_size-=1;
   }
@@ -31,7 +31,6 @@ public:
       return -1;
     }
     return a[stack_size-1];
-
   }
 };
 int main(){

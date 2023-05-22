@@ -85,7 +85,7 @@ Thank you!
 
 
 
-```**Basic Terminologies:**
+**Basic Terminologies:**
 
 In the field of data structures and algorithms, it's important to understand the following key terms:
 
@@ -142,4 +142,3 @@ Understanding these operations and their associated time and space complexities 
 It's worth noting that there are primitive and non-primitive data types. Primitive data types are predefined by the programming language, such as integers and characters. Non-primitive data types, also known as reference variables or objects, are created by the programmer and can hold complex data structures.
 
 By learning data structures and their operations, you can effectively organize and process data, leading to more efficient and optimized algorithms in various real-life applications.
-```

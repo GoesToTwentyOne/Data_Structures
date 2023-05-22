@@ -20,6 +20,17 @@ public:
     delete []temp;
     array_capcity=array_capcity*2;
   }
+  /*
+    void increaseCapacity(){
+      capacity=capacity*2;
+      int *temp=new int[capacity];
+      for(int i=0;i<size;i++){
+        temp[i]=arr[i];
+      }
+      delete []arr;
+      arr=temp;
+    }
+    */
   void push(int value){
     if(stack_size+1>array_capcity){
       increaceCapacity();

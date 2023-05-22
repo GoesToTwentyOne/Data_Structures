@@ -83,16 +83,27 @@ int main(){
   STACK<int> st;
   st.push(2);
   st.push(3);
-  st.push(4);
   st.push(5);
+  st.push(4);
+  st.push(1);
+  st.push(10);
+  st.push(6);
   STACK<int> temp;
   while(st.getSize()>0){
-    temp.push(st.top());
+    int t=st.top();
     st.pop();
+    while(temp.getSize()>0){
+      if(temp.top()<t){
+        break;
+      }
+      st.push(temp.top());
+      temp.pop();
+    }
+    temp.push(t);
   }
   swap(st,temp);
-
-
-
-
+  while(st.getSize()>0){
+    cout<<st.dl.top()<<'\n';
+    st.pop();
+  }
 }

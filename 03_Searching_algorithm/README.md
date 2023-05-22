@@ -1,285 +1,188 @@
-## What is Linear Search?
+Certainly! Here's a README.md file for the searching algorithms: linear search and binary search.
 
-Linear search is a search algorithm that goes through each element in the list one by one, until it finds the desired element or reaches the end of the list. It is also known as a sequential search. Linear search is an easy and simple search algorithm, but it is not the most efficient way to search a list.
+# Searching Algorithms: Linear Search and Binary Search
 
-## How Does Linear Search Work?
+This repository contains implementations of two popular searching algorithms: linear search and binary search. These algorithms are widely used in computer science and are essential to understand when dealing with searching for elements in a collection of data.
 
-Linear search works by starting from the beginning of the list and comparing each element in the list to the element being searched for. If the element is found, the search is complete. If the element is not found, the search continues until the end of the list.
+## Table of Contents
 
-## Advantages and Disadvantages of Linear Search
+- [Introduction](#introduction)
+- [Simulation with Example and Visualization](#simulation-with-example-and-visualization)
+- [Why You Should Learn It?](#why-you-should-learn-it)
+- [Real-Life Example](#real-life-example)
+- [How It Works](#how-it-works)
+- [Complexity Analysis for All Operations](#complexity-analysis-for-all-operations)
+- [Advantages and Disadvantages](#advantages-and-disadvantages)
+- [Algorithm](#algorithm)
+- [Pseudocode](#pseudocode)
+- [Memory Representation with Calculation](#memory-representation-with-calculation)
+- [Garbage Collection](#garbage-collection)
+- [Limitations of Searching Algorithms](#limitations-of-searching-algorithms)
+- [Feedback](#feedback)
+- [Quote to Inspire](#quote-to-inspire)
+- [Contribute](#contribute)
+- [Team Work](#team-work)
+- [Thanking Part](#thanking-part)
+- [Acknowledgements](#acknowledgements)
 
-The biggest advantage of linear search is its simplicity. It is also relatively fast if the list is short. However, it is not the most efficient way to search a list, and it becomes increasingly slower as the list grows.
+## Introduction
 
-## Visual Representation
+Searching algorithms are fundamental operations in computer science that involve finding a specific element in a given collection of data. The linear search algorithm checks each element of the collection sequentially until a match is found, while the binary search algorithm divides the collection into halves and narrows down the search space based on comparison with the middle element.
 
-The following graph shows a linear search algorithm in action. The red line is the element being searched for and the blue lines indicate the elements in the list.
+## Simulation with Example and Visualization
 
-![Linear Search Example]([https://upload.wikimedia.org/wikipedia/commons/5/5a/Linear_search.png](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Linear-Search.png))
+The simulation with examples and visualizations of linear search and binary search can be found in the [examples](examples) directory. Please refer to the individual README files within each example for detailed information on how to run and visualize the simulations.
 
-##  Linear Search algorithm
-- Linear Search ( Array A, Value x)
-- Step 1: Set i to 1
-- Step 2: if i > n then go to step 7
-- Step 3: if A[i] = x then go to step 6
-- Step 4: Set i to i + 1
-- Step 5: Go to Step 2
-- Step 6: Print Element x Found at index i and go to step 8
-- Step 7: Print element not found
-- Step 8: Exit
+## Why You Should Learn It?
 
-## Conclusion
+Learning about linear search and binary search algorithms is crucial for several reasons:
 
-Linear search is a simple and easy to understand search algorithm, but it is not the most efficient way to search a list. It should be used only when the list is short and the element being searched for is likely to be near the beginning of the list.
+- Essential Algorithms: Linear search and binary search are fundamental searching algorithms used in various applications and algorithms.
+- Understanding Search Techniques: These algorithms teach you different approaches to searching and help you develop problem-solving skills.
+- Building Blocks: Linear search and binary search lay the foundation for more advanced searching and sorting algorithms.
+- Optimization: Understanding the complexity of these algorithms allows you to choose the most efficient algorithm for different scenarios.
 
+## Real-Life Example
 
-## What is Binary Search?
+A real-life example of linear search is searching for a name in a phone book. Starting from the beginning, each name is checked until a match is found. Binary search is commonly used in searching for a specific element in a sorted array, such as finding a particular value in a list of students sorted by their IDs.
 
-Binary search is a search algorithm that uses a divide-and-conquer strategy to find an element in a given list. It starts by comparing the element to the middle element in the list. If the element is not found, the search will either move up or down the list depending on whether the element is greater or less than the middle element. This process is repeated until the element is found or the list is exhausted.
+## How It Works
 
-## How Does Binary Search Work?
+- Linear Search: In linear search, each element of the collection is sequentially checked until the target element is found or the end of the collection is reached.
+- Binary Search: Binary search works on sorted collections. It repeatedly divides the collection in half and narrows down the search space based on whether the middle element is greater than or less than the target element. This process continues until the target element is found or the search space becomes empty.
 
-Binary search works by selecting the middle element of the list and comparing it to the element being searched for. If the element is found, the search is complete. If the element is not found, the search will move up or down the list depending on whether the element is greater or less than the middle element. This process is repeated until the element is found or the list is exhausted.
+## Complexity Analysis for All Operations
 
-## Advantages and Disadvantages of Binary Search
+The complexity analysis for linear search and binary search operations is as follows:
 
-The biggest advantage of binary search is its efficiency. Binary search is much faster than linear search, especially when the list is long. However, binary search requires that the list is sorted before searching, which can be time consuming.
+- Linear Search:
+  - Best-case Time Complexity: O(1)
+  - Average-case Time Complexity: O(n)
+  - Worst-case Time Complexity: O(n)
 
-## Visual Representation
+- Binary Search:
+  - Best-case Time Complexity: O(1)
+  - Average-case Time Complexity: O(log n)
+  - Worst-case
 
-The following graph shows a binary search algorithm in action. The red line is the element being searched for and the blue lines indicate the elements in the list.
+ Time Complexity: O(log n)
 
-![Binary Search Example](https://upload.wikimedia.org/wikipedia/commons/8/83/Binary_Search_Depiction.svg)
+## Advantages and Disadvantages
 
-## Binary search algorithm
-- Step 1 − Start searching data from middle of the list.
-- Step 2 − If it is a match, return the index of the item, and exit.
-- Step 3 − If it is not a match, probe position.
-- Step 4 − Divide the list using probing formula and find the new midle.
-- Step 5 − If data is greater than middle, search in higher sub-list.
-- Step 6 − If data is smaller than middle, search in lower sub-list.
-- Step 7 − Repeat until match.
+Advantages of linear search:
+- Simple to understand and implement.
+- Works on unsorted collections.
 
-## Conclusion
+Disadvantages of linear search:
+- Inefficient for large collections.
+- Requires checking each element.
 
-Binary search is a fast and efficient search algorithm, but it requires that the list is sorted before searching. It should be used when the list is long and the element being searched for is likely to be near the middle of the list.
+Advantages of binary search:
+- Efficient for sorted collections.
+- Reduces the search space by half in each iteration.
 
+Disadvantages of binary search:
+- Requires a sorted collection.
+- Additional preprocessing step for sorting.
 
+## Algorithm
 
-***
-***
-## For Theory
-**Binary:** Binary search is a fast search algorithm with run-time complexity of Ο*logn*. This search algorithm works on the principle of divide and conquer. For this algorithm to work properly, the data collection should be in the sorted form.
+The algorithm for linear search is straightforward: iterate through the collection and compare each element with the target until a match is found or the end of the collection is reached.
 
-Binary search looks for a particular item by comparing the middle most item of the collection. If a match occurs, then the index of item is returned. If the middle item is greater than the item, then the item is searched in the sub-array to the left of the middle item. Otherwise, the item is searched for in the sub-array to the right of the middle item. This process continues on the sub-array as well until the size of the subarray reduces to zero.
+The algorithm for binary search involves dividing the collection in half and narrowing down the search space based on comparisons with the middle element until the target is found or the search space becomes empty.
 
-**How Binary Search Works?**
+## Pseudocode
 
-For a binary search to work, it is mandatory for the target array to be sorted. We shall learn the process of binary search with a pictorial example. The following is our sorted array and let us assume that we need to search the location of value 31 using binary search.
+Pseudocode for linear search:
 
-First, we shall determine half of the array by using this formula −
+```
+function linearSearch(collection, target):
+    for each element in collection:
+        if element == target:
+            return true
+    return false
+```
 
-mid = low + (high - low) / 2
+Pseudocode for binary search:
 
-Here it is, 0 + 9−0/ 2 = 4 *integer value of* 4.5
+```
+function binarySearch(collection, target):
+    low = 0
+    high = length(collection) - 1
 
-. So, 4 is the mid of the array.
+    while low <= high:
+        mid = (low + high) / 2
 
-Now we compare the value stored at location 4, with the value being searched, i.e. 31. We find that the value at location 4 is 27, which is not a match. As the value is greater than 27 and we have a sorted array, so we also know that the target value must be in the upper portion of the array.
+        if collection[mid] == target:
+            return true
+        else if collection[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
 
-We change our low to mid + 1 and find the new mid value again.
+    return false
+```
 
-low = mid + 1
+## Memory Representation with Calculation
 
-mid = low + (high - low) / 2
+The memory representation for linear search and binary search depends on the programming language and data structures used. In both cases, the collection is stored in memory.
 
-Our new mid is 7 now. We compare the value stored at location 7 with our target value 31.
+Memory calculation for linear search:
+- Space Complexity: O(1)
 
-The value stored at location 7 is not a match, rather it is more than what we are looking for. So, the value must be in the lower part from this location.
+Memory calculation for binary search:
+- Space Complexity: O(n) for the collection (array) and O(1) for other variables
 
-Hence, we calculate the mid again. This time it is 5.
+## Garbage Collection
 
-We compare the value stored at location 5 with our target value. We find that it is a match.
+Garbage collection is a mechanism in programming languages that automatically reclaims memory occupied by objects that are no longer in use. Both linear search and binary search algorithms do not require explicit garbage collection as they utilize memory efficiently and do not create unnecessary objects.
 
-We conclude that the target value 31 is stored at location 5.
+## Limitations of Searching Algorithms
 
-Binary search halves the searchable items and thus reduces the count of comparisons to be made to very less numbers.
+- Linear Search:
+  - Inefficient for large collections.
+  - Requires checking each element, which can be time-consuming.
 
-**Pseudocode**
+- Binary Search:
+  - Requires a sorted collection.
+  - Additional preprocessing step for sorting.
 
-The pseudocode of binary search algorithms should look like this −
+## Feedback
 
-Procedure binary\_search
+We welcome any feedback, suggestions, or bug reports for the searching algorithms implementation. Please feel free to open an issue or submit a pull request with your contributions.
 
-`   `A ← sorted array
+## Quote to Inspire
 
-`   `n ← size of array
+> "Coming together is a beginning. Keeping together is progress. Working together is success." - Henry Ford
 
-`   `x ← value to be searched
+## Contribute
 
-`   `Set lowerBound = 1
+We encourage contributions to enhance the searching algorithms implementation. If you'd like to contribute, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
-`   `Set upperBound = n
+## Team Work
 
-`   `while x not found
+This project is the result of collaborative teamwork, with each member contributing their expertise and insights to create efficient and reliable searching algorithms.
 
-`      `if upperBound < lowerBound
+## Thanking Part
 
-`         `EXIT: x does not exists.
+We would like to express our gratitude to all the contributors who have helped in improving this searching algorithms implementation.
 
+## Acknowledgements
 
+We acknowledge the following resources for providing valuable insights and inspiration:
+- [Resource 1]
+- [Resource 2]
+- [Resource 3]
 
-`      `set midPoint = lowerBound + ( upperBound - lowerBound ) / 2
-
-
-
-`      `if A[midPoint] < x
-
-`         `set lowerBound = midPoint + 1
-
-
-
-`      `if A[midPoint] > x
-
-`         `set upperBound = midPoint - 1
-
-`      `if A[midPoint] = x
-
-`         `EXIT: x found at location midPoint
-
-`   `end while
-
-
-
-end procedure
-
-Interpolation search is an improved variant of binary search. This search algorithm works on the probing position of the required value. For this algorithm to work properly, the data collection should be in a sorted form and equally distributed.
-
-Binary search has a huge advantage of time complexity over linear search. Linear search has worst-case complexity of Ο*n*
-
-whereas binary search has Ο*logn*
-
-.
-
-There are cases where the location of target data may be known in advance. For example, in case of a telephone directory, if we want to search the telephone number of Morphius. Here, linear search and even binary search will seem slow as we can directly jump to memory space where the names start from 'M' are stored.
-
-**Positioning in Binary Search**
-
-In binary search, if the desired data is not found then the rest of the list is divided in two parts, lower and higher. The search is carried out in either of them.
-
-Even when the data is sorted, binary search does not take advantage to probe the position of the desired data.
-
-**Position Probing in Interpolation Search**
-
-Interpolation search finds a particular item by computing the probe position. Initially, the probe position is the position of the middle most item of the collection.
-
-If a match occurs, then the index of the item is returned. To split the list into two parts, we use the following method −
-
-mid = Lo + ((Hi - Lo) / (A[Hi] - A[Lo])) \* (X - A[Lo])
-
-where −
-
-`   `A    = list
-
-`   `Lo   = Lowest index of the list
-
-`   `Hi   = Highest index of the list
-
-`   `A[n] = Value stored at index n in the list
-
-If the middle item is greater than the item, then the probe position is again calculated in the sub-array to the right of the middle item. Otherwise, the item is searched in the subarray to the left of the middle item. This process continues on the sub-array as well until the size of subarray reduces to zero.
-
-Runtime complexity of interpolation search algorithm is **Ο*log*(*logn***
-
-**)** as compared to **Ο*logn***
-
-of BST in favorable situations.
-
-**Algorithm**
-
-As it is an improvisation of the existing BST algorithm, we are mentioning the steps to search the 'target' data value index, using position probing −
-
-Step 1 − Start searching **data** from middle of the list.
-
-Step 2 − If it is a match, return the index of the item, and exit.
-
-Step 3 − If it is not a match, probe position.
-
-Step 4 − Divide the list using probing formula and find the new midle.
-
-Step 5 − If data is greater than middle, search in higher sub-list.
-
-Step 6 − If data is smaller than middle, search in lower sub-list.
-
-Step 7 − Repeat until match.
-
-**Pseudocode**
-
-A → Array list
-
-N → Size of A
-
-X → Target Value
-
-Procedure Interpolation\_Search()
-
-`   `Set Lo  →  0
-
-`   `Set Mid → -1
-
-`   `Set Hi  →  N-1
-
-`   `While X does not match
-
-
-
-`      `if Lo equals to Hi OR A[Lo] equals to A[Hi]
-
-`         `EXIT: Failure, Target not found
-
-`      `end if
-
-
-
-`      `Set Mid = Lo + ((Hi - Lo) / (A[Hi] - A[Lo])) \* (X - A[Lo])
-
-`      `if A[Mid] = X
-
-`         `EXIT: Success, Target found at Mid
-
-`      `else
-
-`         `if A[Mid] < X
-
-`            `Set Lo to Mid+1
-
-`         `else if A[Mid] > X
-
-`            `Set Hi to Mid-1
-
-`         `end if
-
-`      `end if
-
-`   `End While
-
-End Procedure
-
-
-***
-***
-**Limitation of Binary Search Algorithm:**
-- While binary search is an efficient algorithm for searching in sorted arrays or lists, it does have a few limitations:
-
-- Sorted Data Requirement: Binary search relies on the input data being sorted in ascending or descending order. If the data is not sorted, binary search cannot be directly applied, and sorting the data can add extra overhead.
-
-- Array/List Requirement: Binary search is primarily designed for sorted arrays or lists. It may not be directly applicable to other data structures like linked lists or trees. Converting the data to an array or list format may require additional time and memory.
-
-- Insertion/Deletion Overhead: Binary search performs well for static data sets with infrequent changes. However, if the data is frequently updated, such as frequent insertions or deletions, maintaining the sorted order can become costly. Each insertion or deletion operation may require shifting elements, impacting the algorithm's efficiency.
-
-- Random Access Requirement: Binary search assumes random access to elements, meaning it requires the ability to access any element in constant time. In certain data structures, like linked lists, random access may not be efficient, making binary search less suitable.
-
-- Lack of Flexibility: Binary search is designed to find a specific value or determine its absence. It may not be the best choice for more complex search tasks, such as finding the closest value or all occurrences of a value. Modifying or adapting the algorithm may be necessary to address such requirements.
-
-- Recursive Overhead: Binary search can be implemented using recursion, but this may lead to stack overflow errors if the input size is too large. Some programming languages have a limited recursion depth, and extremely large arrays may exceed this limit.
-
-- Despite these limitations, binary search remains a powerful and widely used algorithm for efficient searching in sorted arrays, boasting a time complexity of O(log n) compared to linear search with a time complexity of O(n).
+Thank you!
+```
+Linear Search ( Array A, Value x)
+Step 1: Set i to 1
+Step 2: if i > n then go to step 7
+Step 3: if A[i] = x then go to step 6
+Step 4: Set i to i + 1
+Step 5: Go to Step 2
+Step 6: Print Element x Found at index i and go to step 8
+Step 7: Print element not found
+Step 8: Exit
+```

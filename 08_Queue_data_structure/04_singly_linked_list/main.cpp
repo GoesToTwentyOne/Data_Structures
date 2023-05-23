@@ -42,6 +42,8 @@ public:
       delete head;
       head=NULL;
       tail=NULL;
+      size--;
+      return;
     }
     size--;
     NODE* a=head;
@@ -53,7 +55,6 @@ public:
       cout<<"your queue is empty"<<'\n';
     }
     return head->data;
-
   }
   int getsize(){
     return size;

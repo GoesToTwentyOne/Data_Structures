@@ -6,7 +6,7 @@ int main(){
   queue<string> q;
   q.push("1");
   for(int i=1;i<=n;i++){
-    cout<<"binary representaion of "<<i<<" is : "<<q.front()<<'\n';
+    cout<<"binary representaion of "<<i<<" is :-> "<<q.front()<<'\n';
     string temp=q.front();
     q.pop();
     q.push(temp +"0");

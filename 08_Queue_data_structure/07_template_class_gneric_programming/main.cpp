@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
-
 const int max_size = 500;
-
 template <class T>
 class Queue {
 public:

@@ -11,10 +11,13 @@ public:
     size=0;
   }
   void enqueue(int value){
+    //check queue is full
     if(size==max_size){
       cout<<"Queue is full"<<'\n';
     }
     r++;
+    //check cross the broder or not
+    //if cross the border then r = 0 set
     if(r==max_size){
       r=0;
     }
@@ -24,6 +27,7 @@ public:
   int front(){
     if(size==0){
       cout<<"Your queue is empty"<<'\n';
+      return -1;
     }
     return q[l];
 
@@ -33,6 +37,8 @@ public:
       cout<<"Your queue is empty"<<'\n';
     }
     l++;
+    //check cross the broder or not
+    //if cross the border then r = 0 set
     if(l==max_size){
       l=0;
     }
@@ -40,6 +46,8 @@ public:
 
   }
   int getsize(){
+    //if(l<r):: r-l+1
+    //if(l>r)::n-l+r+1
     return size;
   }
 

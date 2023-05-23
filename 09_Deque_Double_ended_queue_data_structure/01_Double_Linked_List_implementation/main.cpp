@@ -50,7 +50,7 @@ public:
   }
   void pop_back(){
     if(size==0){
-      cout<<"your deque is empty"<<'\n';
+      cout<<"your deque is empty<underflow>"<<'\n';
     }
     if(size==1){
       delete tail;
@@ -66,7 +66,7 @@ public:
   }
   void pop_front(){
     if(size==0){
-      cout<<"your deque is empty"<<'\n';
+      cout<<"your deque is empty<underflow>"<<'\n';
     }
     if(size==1){
       delete head;

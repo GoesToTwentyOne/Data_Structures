@@ -3,6 +3,7 @@ using namespace std;
 class NODE{
 public:
   int Node_id;
+  int value;
   NODE* left;
   NODE* right;
   NODE*parent;
@@ -13,16 +14,18 @@ public:
   BINARY_TREE(){
     root=NULL;
   }
-  NODE* createNewNode(int id){
+  NODE* createNewNode(int id,int value){
     NODE* newnode= new NODE;
     newnode->Node_id=id;
+    newnode->value=value;
     newnode->left=NULL;
     newnode->right=NULL;
     newnode->parent=NULL;
     return newnode;
   }
-  void BFS_Insertion(int value){
-    NODE* newnode=createNewNode(value);
+  //Insertion using BFS
+  void Insertion(int Note_id,int value){
+    NODE* newnode=createNewNode(Note_id,value);
     if(root==NULL){
       root=newnode;
       return;
@@ -49,7 +52,7 @@ public:
     }
 
   }
-  void BFS_Traversing(){
+  void BFS_Traversing_with_value(){
     if(root==NULL){
       return;
     }
@@ -58,7 +61,7 @@ public:
     while(!q.empty()){
       NODE* a= q.front();
       q.pop();
-      int p=-1,l=-1,r=-1;
+      int p=-1,l=-1,r=-1,v=-1;
       if(a->left != NULL){
         l=a->left->Node_id;
         q.push(a->left);
@@ -70,23 +73,39 @@ public:
       if(a->parent != NULL){
         p=a->parent->Node_id;
       }
-      cout<<"Node id :"<<a->Node_id<<" Left Node :"<<l<<" Right Node :"<<r<<" Parent id :"<<p<<'\n';
+      if(a->value != 0){
+        v=a->value;
+      }
+      cout<<"Node id :"<<a->Node_id<<",  Value:  "<<v<<", Left Node :"<<l<<", Right Node :"<<r<<", Parent id :"<<p<<'\n';
     }
-
+  }
+  //searching using DFS
+  void searching(NODE *a,int value){
+    if(a==NULL){
+      return;
+    }
+    if(a->value== value){
+      cout<<"Founding :"<<a->Node_id<<" ";
+    }
+    searching(a->left,value);
+    searching(a->right,value);
   }
 
 
 };
 int main(){
   BINARY_TREE bt;
-  bt.BFS_Insertion(0);
-  bt.BFS_Insertion(1);
-  bt.BFS_Insertion(2);
-  bt.BFS_Insertion(3);
-  bt.BFS_Insertion(4);
-  bt.BFS_Insertion(5);
-  bt.BFS_Insertion(6);
-  bt.BFS_Insertion(7);
-  bt.BFS_Insertion(8);
-  bt.BFS_Traversing();
+  bt.Insertion(0,0);
+  bt.Insertion(1,1);
+  bt.Insertion(2,2);
+  bt.Insertion(3,3);
+  bt.Insertion(4,4);
+  bt.Insertion(5,5);
+  bt.Insertion(6,6);
+  bt.Insertion(7,7);
+  bt.Insertion(8,8);
+  bt.Insertion(9,3);
+  bt.BFS_Traversing_with_value();
+  bt.searching(bt.root,3);
+
 }

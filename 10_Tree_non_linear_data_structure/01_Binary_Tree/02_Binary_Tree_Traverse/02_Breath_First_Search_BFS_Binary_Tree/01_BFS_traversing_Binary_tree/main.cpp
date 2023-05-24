@@ -40,6 +40,9 @@ public:
     root=allnode[0];
   }
   void BFS_Traversing(){
+    if(root == NULL){
+      return;
+    }
     queue<NODE*> q;
     q.push(root);
     while(!q.empty()){
@@ -68,4 +71,13 @@ int main(){
   BINARY_TREE bt;
   bt.build_tree();
   bt.BFS_Traversing();
+
+  /*
+             0
+            / \
+           1   2
+          /   / \
+         5   3   4
+  */
+
 }

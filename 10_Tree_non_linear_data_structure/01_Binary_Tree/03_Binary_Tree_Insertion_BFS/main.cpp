@@ -3,7 +3,6 @@ using namespace std;
 class NODE{
 public:
   int Node_id;
-  int value;
   NODE* left;
   NODE* right;
   NODE*parent;
@@ -14,17 +13,17 @@ public:
   BINARY_TREE(){
     root=NULL;
   }
-  NODE* createNewNode(int id,int value){
+  NODE* createNewNode(int id){
     NODE* newnode= new NODE;
     newnode->Node_id=id;
-    newnode->value=value;
     newnode->left=NULL;
     newnode->right=NULL;
     newnode->parent=NULL;
     return newnode;
   }
-  void BFS_Insertion(int Note_id,int value){
-    NODE* newnode=createNewNode(Note_id,value);
+  //insertion using bfs technique
+  void Insertion(int value){
+    NODE* newnode=createNewNode(value);
     if(root==NULL){
       root=newnode;
       return;
@@ -74,32 +73,21 @@ public:
       }
       cout<<"Node id :"<<a->Node_id<<" Left Node :"<<l<<" Right Node :"<<r<<" Parent id :"<<p<<'\n';
     }
-  }
-  void DFS_searching(NODE *a,int value){
-    if(a==NULL){
-      return;
-    }
-    if(a->value== value){
-      cout<<a->Node_id<<" ";
-    }
-    DFS_searching(a->left,value);
-    DFS_searching(a->right,value);
+
   }
 
 
 };
 int main(){
   BINARY_TREE bt;
-  bt.BFS_Insertion(0,0);
-  bt.BFS_Insertion(1,1);
-  bt.BFS_Insertion(2,2);
-  bt.BFS_Insertion(3,3);
-  bt.BFS_Insertion(4,4);
-  bt.BFS_Insertion(5,5);
-  bt.BFS_Insertion(6,6);
-  bt.BFS_Insertion(7,7);
-  bt.BFS_Insertion(8,8);
+  bt.Insertion(0);
+  bt.Insertion(1);
+  bt.Insertion(2);
+  bt.Insertion(3);
+  bt.Insertion(4);
+  bt.Insertion(5);
+  bt.Insertion(6);
+  bt.Insertion(7);
+  bt.Insertion(8);
   bt.BFS_Traversing();
-  bt.DFS_searching(bt.root,3);
-
 }
